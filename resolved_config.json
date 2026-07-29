@@ -1,0 +1,105 @@
+{
+  "data_root": "/content/drive/MyDrive/Lung_data/ASCE_final_processed",
+  "manifest_csv": null,
+  "output_dir": "/content/drive/MyDrive/qecv_publication_runs",
+  "existing_split_dir": "/content/drive/MyDrive/qecv_publication_runs/splits",
+  "class_names": [
+    "bacteria",
+    "normal",
+    "virus"
+  ],
+  "image_size": 224,
+  "batch_size": 2,
+  "num_workers": 2,
+  "pin_memory": true,
+  "test_fraction": 0.15,
+  "val_fraction_of_remaining": 0.15,
+  "patient_level_split": false,
+  "duplicate_hash_check": true,
+  "use_horizontal_flip": true,
+  "rotation_degrees": 5.0,
+  "color_jitter": 0.1,
+  "pretrained_backbone": true,
+  "n_qubits": 6,
+  "q_layers": 2,
+  "bottleneck_dim": 6,
+  "freeze_backbone_epochs": 0,
+  "adaptive_gate_inputs": [
+    "global_purity",
+    "z_polarization"
+  ],
+  "quantum_device_seed": 33,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "epochs": 10,
+  "learning_rate": 0.0001,
+  "weight_decay": 1e-05,
+  "gradient_clip": 1.0,
+  "early_stopping_patience": 4,
+  "selection_metric": "auroc_ovr",
+  "class_weighted_loss": true,
+  "balanced_sampler": false,
+  "amp": false,
+  "model_variants": [
+    "classical_full",
+    "classical_bottleneck",
+    "classical_mlp",
+    "vqc_head",
+    "hybrid_fixed",
+    "hybrid_adaptive"
+  ],
+  "train_conditions": [
+    {
+      "name": "clean",
+      "noise_type": "none",
+      "noise_strength": 0.0,
+      "mixed_noise_types": [
+        "amplitude",
+        "phase",
+        "depolarizing"
+      ],
+      "mixed_max_strength": 0.05
+    }
+  ],
+  "eval_noise_types": [
+    "amplitude",
+    "phase",
+    "depolarizing"
+  ],
+  "noise_strengths": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "shot_settings": [
+    null
+  ],
+  "compute_quantum_diagnostics": true,
+  "diagnostics_max_samples": null,
+  "temperature_scaling": true,
+  "temperature_steps": 250,
+  "temperature_lr": 0.05,
+  "ece_bins": 15,
+  "bootstrap_resamples": 500,
+  "bootstrap_seed": 2026,
+  "bootstrap_metrics": [
+    "accuracy",
+    "macro_f1",
+    "auroc_ovr",
+    "auprc_macro",
+    "ece",
+    "brier",
+    "nll"
+  ],
+  "alpha": 0.05,
+  "risk_coverage_points": 30,
+  "minimum_selective_samples": 20,
+  "device": "cuda",
+  "resume": true,
+  "overwrite": false,
+  "quick_test": false
+}

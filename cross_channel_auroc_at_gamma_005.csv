@@ -1,0 +1,7 @@
+model,train_condition,eval_noise_type,auroc_ovr
+hybrid_adaptive,clean,amplitude,0.9146422715275015
+hybrid_adaptive,clean,depolarizing,0.9146205813709715
+hybrid_adaptive,clean,phase,0.9145518779524276
+hybrid_fixed,clean,amplitude,0.9093394047429498
+hybrid_fixed,clean,depolarizing,0.9094025869017047
+hybrid_fixed,clean,phase,0.9089273863819692
