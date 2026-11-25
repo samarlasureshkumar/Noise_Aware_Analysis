@@ -167,7 +167,7 @@ Important tables include:
 `structural_ablation_summary.csv`
 `diagnostic_risk_coverage.csv`
 Minimum publication run
-Do not prepare a revised manuscript from the pilot output. A minimum confirmatory run should include:
+A minimum confirmatory run should include:
 all five publication seeds for the control and training-noise experiments;
 all three test-time channels;
 the complete strength grid;
