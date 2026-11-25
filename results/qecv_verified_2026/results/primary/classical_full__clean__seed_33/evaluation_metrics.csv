@@ -1,0 +1,2 @@
+model,train_condition,train_noise_type,train_noise_strength,seed,split,eval_noise_type,noise_strength,shots,temperature,accuracy,balanced_accuracy,macro_f1,weighted_f1,mcc,auroc_ovr,auprc_macro,ece,brier,nll
+classical_full,clean,none,0.0,33,test,none,0.0,analytic,2.944922924041748,0.7861885790172642,0.8211381123855923,0.7970151041548554,0.7882033275273701,0.6728624012311537,0.9376895573209958,0.9008520795002878,0.02235474292025623,0.2927251365957477,0.5151734335215343

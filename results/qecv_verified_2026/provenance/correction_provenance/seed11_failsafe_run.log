@@ -1,0 +1,251 @@
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /root/.cache/torch/hub/checkpoints/densenet121-a639ec97.pth
+
+  0%|          | 0.00/30.8M [00:00<?, ?B/s]
+ 29%|██▉       | 9.00M/30.8M [00:00<00:00, 93.7MB/s]
+ 73%|███████▎  | 22.4M/30.8M [00:00<00:00, 121MB/s] 
+100%|██████████| 30.8M/30.8M [00:00<00:00, 122MB/s]
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+[classical_full/clean/seed=11] epoch 01 val_AUROC=0.9117 val_F1=0.7648
+[classical_full/clean/seed=11] epoch 02 val_AUROC=0.9157 val_F1=0.7617
+[classical_full/clean/seed=11] epoch 03 val_AUROC=0.9196 val_F1=0.8130
+[classical_full/clean/seed=11] epoch 04 val_AUROC=0.9111 val_F1=0.7873
+[classical_full/clean/seed=11] epoch 05 val_AUROC=0.9179 val_F1=0.7928
+[classical_full/clean/seed=11] epoch 06 val_AUROC=0.9186 val_F1=0.8148
+[classical_full/clean/seed=11] epoch 07 val_AUROC=0.9191 val_F1=0.7897
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2550, in <module>
+    main()
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2546, in main
+    run_pipeline(cfg)
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2452, in run_pipeline
+    frame = evaluate_experiment(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2235, in evaluate_experiment
+    selective_analysis(pack, cfg, experiment_dir / "selective_prediction")
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2059, in selective_analysis
+    curve.to_csv(output_dir / f"risk_coverage_{name}.csv", index=False)
+  File "/usr/local/lib/python3.12/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/content/drive/MyDrive/qecv_frozen_cohort_correction/corrected_outputs_seed11/experiments/classical_full__clean__seed_11/selective_prediction'
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+[classical_full/clean/seed=11] epoch 08 val_AUROC=0.9315 val_F1=0.8462
+[classical_full/clean/seed=11] epoch 09 val_AUROC=0.9268 val_F1=0.8275
+[classical_full/clean/seed=11] epoch 10 val_AUROC=0.9339 val_F1=0.8342
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2553, in <module>
+    main()
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2549, in main
+    run_pipeline(cfg)
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2455, in run_pipeline
+    frame = evaluate_experiment(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2240, in evaluate_experiment
+    bootstrap_analysis(condition_packs, cfg, experiment_dir / "statistics")
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2132, in bootstrap_analysis
+    pd.DataFrame(rows).to_csv(output_dir / "bootstrap_confidence_intervals.csv", index=False)
+  File "/usr/local/lib/python3.12/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/content/drive/MyDrive/qecv_frozen_cohort_correction/corrected_outputs_seed11/experiments/classical_full__clean__seed_11/statistics'
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1492: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1711: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(ordered["selective_risk"], ordered["coverage"]))
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:1725: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  return float(np.trapz(y, x) / denominator)
+/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py:2161: NearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+  pearson = pearsonr(x, y)
+[classical_bottleneck/clean/seed=11] epoch 01 val_AUROC=0.8640 val_F1=0.7065
+[classical_bottleneck/clean/seed=11] epoch 02 val_AUROC=0.8667 val_F1=0.7613
+[classical_bottleneck/clean/seed=11] epoch 03 val_AUROC=0.8975 val_F1=0.7834
+[classical_bottleneck/clean/seed=11] epoch 04 val_AUROC=0.9153 val_F1=0.8056
+[classical_bottleneck/clean/seed=11] epoch 05 val_AUROC=0.8859 val_F1=0.7530
+[classical_bottleneck/clean/seed=11] epoch 06 val_AUROC=0.8771 val_F1=0.7771
+[classical_bottleneck/clean/seed=11] epoch 07 val_AUROC=0.9068 val_F1=0.8071
+[classical_bottleneck/clean/seed=11] epoch 08 val_AUROC=0.9247 val_F1=0.8258
+[classical_bottleneck/clean/seed=11] epoch 09 val_AUROC=0.9087 val_F1=0.7990
+[classical_bottleneck/clean/seed=11] epoch 10 val_AUROC=0.9226 val_F1=0.8305
+[classical_mlp/clean/seed=11] epoch 01 val_AUROC=0.8359 val_F1=0.6880
+[classical_mlp/clean/seed=11] epoch 02 val_AUROC=0.8703 val_F1=0.7510
+[classical_mlp/clean/seed=11] epoch 03 val_AUROC=0.8958 val_F1=0.7647
+[classical_mlp/clean/seed=11] epoch 04 val_AUROC=0.8649 val_F1=0.7385
+[classical_mlp/clean/seed=11] epoch 05 val_AUROC=0.8697 val_F1=0.7445
+[classical_mlp/clean/seed=11] epoch 06 val_AUROC=0.8727 val_F1=0.7863
+[classical_mlp/clean/seed=11] epoch 07 val_AUROC=0.9098 val_F1=0.7976
+[classical_mlp/clean/seed=11] epoch 08 val_AUROC=0.9128 val_F1=0.8115
+[classical_mlp/clean/seed=11] epoch 09 val_AUROC=0.9131 val_F1=0.8104
+[classical_mlp/clean/seed=11] epoch 10 val_AUROC=0.8972 val_F1=0.8256
+[vqc_head/clean/seed=11] epoch 01 val_AUROC=0.8301 val_F1=0.4205
+[vqc_head/clean/seed=11] epoch 02 val_AUROC=0.7975 val_F1=0.5565
+[vqc_head/clean/seed=11] epoch 03 val_AUROC=0.8270 val_F1=0.5612
+[vqc_head/clean/seed=11] epoch 04 val_AUROC=0.7559 val_F1=0.4877
+[vqc_head/clean/seed=11] epoch 05 val_AUROC=0.8944 val_F1=0.7809
+[vqc_head/clean/seed=11] epoch 06 val_AUROC=0.8520 val_F1=0.7330
+[vqc_head/clean/seed=11] epoch 07 val_AUROC=0.8905 val_F1=0.7251
+[vqc_head/clean/seed=11] epoch 08 val_AUROC=0.8688 val_F1=0.7670
+[vqc_head/clean/seed=11] epoch 09 val_AUROC=0.8830 val_F1=0.7597
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2559, in <module>
+    main()
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2555, in main
+    run_pipeline(cfg)
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2477, in run_pipeline
+    aggregate_across_seeds(all_metrics, root / "summary")
+  File "/content/drive/MyDrive/qecv_frozen_cohort_correction/qecv_publication_pipeline.py", line 2344, in aggregate_across_seeds
+    aggregate.to_csv(output_dir / "multi_seed_summary.csv", index=False)
+  File "/usr/local/lib/python3.12/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.12/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/content/drive/MyDrive/qecv_frozen_cohort_correction/corrected_outputs_seed11/summary'
+[Skip existing] classical_full__clean__seed_11
+[Skip existing] classical_bottleneck__clean__seed_11
+[Skip existing] classical_mlp__clean__seed_11
+[Skip existing] vqc_head__clean__seed_11
+Completed. Outputs are in: /content/drive/MyDrive/qecv_frozen_cohort_correction/corrected_outputs_seed11

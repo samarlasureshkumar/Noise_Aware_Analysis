@@ -1,0 +1,13 @@
+eval_noise_type,metric,robustness_auc
+amplitude,auroc_ovr,1.00098609225635
+amplitude,macro_f1,1.005931274661506
+amplitude,auprc_macro,1.0032073210267967
+amplitude,ece,0.036579254480353374
+depolarizing,auroc_ovr,1.0010885805513674
+depolarizing,macro_f1,1.0013587031346651
+depolarizing,auprc_macro,1.0030806015257827
+depolarizing,ece,0.03234488128685697
+phase,auroc_ovr,1.000020552515052
+phase,macro_f1,1.0
+phase,auprc_macro,0.9999819851268278
+phase,ece,0.036887734297262276

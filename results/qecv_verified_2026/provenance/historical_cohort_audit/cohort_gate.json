@@ -1,0 +1,22 @@
+{
+  "gate_name": "QECV_TEST_COHORT_FINGERPRINT_GATE",
+  "status": "FAIL",
+  "reference_fingerprint_sha256": "2130aea9426eff8c9c388909999f6dfaac3a4818d3625ae8e6673cad47c8becd",
+  "affected_experiments": [
+    "classical_bottleneck__clean__seed_11",
+    "classical_full__clean__seed_11",
+    "classical_mlp__clean__seed_11",
+    "vqc_head__amplitude_002__seed_11",
+    "vqc_head__clean__seed_11",
+    "vqc_head__depolarizing_002__seed_11"
+  ],
+  "aligned_seeds": [
+    22,
+    33
+  ],
+  "formal_cross_model_seed_filter": [
+    22,
+    33
+  ],
+  "block_uniform_three_seed_claim": true
+}

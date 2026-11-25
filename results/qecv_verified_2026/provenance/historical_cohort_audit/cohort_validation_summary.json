@@ -1,0 +1,52 @@
+{
+  "input": "/content/drive/MyDrive/qecv_final_results.zip",
+  "resolved_result_root": "/tmp/qecv_cohort_audit_o0obvg3s",
+  "frozen_manifest": "/tmp/qecv_cohort_audit_o0obvg3s/dataset_manifest_with_splits.csv",
+  "path_tail_components": 2,
+  "expected_models": [
+    "classical_full",
+    "classical_bottleneck",
+    "classical_mlp",
+    "vqc_head",
+    "hybrid_fixed",
+    "hybrid_adaptive"
+  ],
+  "manifest_test_count": 753,
+  "manifest_class_counts": {
+    "0": 388,
+    "1": 138,
+    "2": 227
+  },
+  "manifest_cohort_fingerprint_sha256": "2130aea9426eff8c9c388909999f6dfaac3a4818d3625ae8e6673cad47c8becd",
+  "experiments_audited": 20,
+  "prediction_files_audited": 345,
+  "distinct_experiment_cohorts": 2,
+  "affected_experiments": [
+    "classical_bottleneck__clean__seed_11",
+    "classical_full__clean__seed_11",
+    "classical_mlp__clean__seed_11",
+    "vqc_head__amplitude_002__seed_11",
+    "vqc_head__clean__seed_11",
+    "vqc_head__depolarizing_002__seed_11"
+  ],
+  "internally_inconsistent_experiments": [],
+  "aligned_seeds_for_paired_cross_model_comparison": [
+    22,
+    33
+  ],
+  "all_expected_experiments_match_manifest": false,
+  "uniform_three_seed_cross_model_comparison_valid": false,
+  "alternative_cohort_groups": [
+    {
+      "cohort_group": "ALT_1",
+      "cohort_fingerprint_sha256": "5a098731c03c72c35292620fab04100fd458f58693ff78f1950659aa008a8d2e",
+      "n_samples": 753,
+      "n_experiments": 6,
+      "experiments": "classical_bottleneck__clean__seed_11;classical_full__clean__seed_11;classical_mlp__clean__seed_11;vqc_head__amplitude_002__seed_11;vqc_head__clean__seed_11;vqc_head__depolarizing_002__seed_11",
+      "is_frozen_manifest": false,
+      "overlap_with_manifest": 128,
+      "jaccard_with_manifest": 0.09288824383164006
+    }
+  ],
+  "recommendation": "Rerun the affected experiments on the frozen manifest, or restrict formal cross-model comparisons to aligned seeds [22, 33]."
+}

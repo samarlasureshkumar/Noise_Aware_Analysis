@@ -1,0 +1,27 @@
+{
+  "n_total": 5016,
+  "n_train": 3623,
+  "n_validation": 640,
+  "n_test": 753,
+  "class_to_idx": {
+    "bacteria": 0,
+    "normal": 1,
+    "virus": 2
+  },
+  "train_class_counts": {
+    "bacteria": 1869,
+    "normal": 661,
+    "virus": 1093
+  },
+  "validation_class_counts": {
+    "bacteria": 330,
+    "normal": 117,
+    "virus": 193
+  },
+  "test_class_counts": {
+    "bacteria": 388,
+    "normal": 138,
+    "virus": 227
+  },
+  "patient_level_split": false
+}

@@ -1,0 +1,56 @@
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/opt/pyvenv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+manifest 753
+runs 18 aligned 18
+classical_bottleneck 11 True 0.7556 0.7251 0.8939
+classical_bottleneck 22 True 0.8127 0.8126 0.911
+classical_bottleneck 33 True 0.7955 0.7765 0.8928
+classical_full 11 True 0.8035 0.8116 0.9333
+classical_full 22 True 0.8181 0.8244 0.9326
+classical_full 33 True 0.7862 0.797 0.9377
+classical_mlp 11 True 0.8074 0.8069 0.9051
+classical_mlp 22 True 0.8167 0.8174 0.9229
+classical_mlp 33 True 0.7928 0.78 0.922
+hybrid_adaptive 11 True 0.8061 0.8137 0.9058
+hybrid_adaptive 22 True 0.8141 0.8098 0.9196
+hybrid_adaptive 33 True 0.8194 0.8157 0.9183
+hybrid_fixed 11 True 0.7902 0.7853 0.8907
+hybrid_fixed 22 True 0.8114 0.8047 0.9122
+hybrid_fixed 33 True 0.8154 0.8163 0.9239
+vqc_head 11 True 0.7902 0.8002 0.9038
+vqc_head 22 True 0.4343 0.3374 0.6961
+vqc_head 33 True 0.7689 0.7789 0.9025

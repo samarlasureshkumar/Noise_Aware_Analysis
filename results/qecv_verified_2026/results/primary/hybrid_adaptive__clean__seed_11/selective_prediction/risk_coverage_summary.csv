@@ -1,0 +1,6 @@
+selection_score,aurc
+confidence,0.13380092577824348
+negative_entropy,0.13624271890975095
+global_purity,0.20920233524948248
+local_purity,0.16413777132118218
+z_polarization,0.12612344437309872
